@@ -42,7 +42,7 @@ class TestState(unittest.TestCase):
     def test_str(self):
         """test method for string representation"""
         U1 = Usr()
-        sting = f"[{type(u1).__name__}] ({U1.id}) {U1.__dict__}"
+        sting = f"[{type(U1).__name__}] ({U1.id}) {U1.__dict__}"
         self.assertEqual(U1.__str__(), sting)
 
     def test_save(self):
