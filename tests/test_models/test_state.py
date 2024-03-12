@@ -56,7 +56,7 @@ class TestState(unittest.TestCase):
     def test_todict(self):
         """test mehod for dictionary"""
         S1 = State()
-        S2 = Satte(**S1.to_dict())
+        S2 = State(**S1.to_dict())
         A_dict = S2.to_dict()
         self.assertIsInstance(A_dict, dict)
         self.assertEqual(A_dict['__class__'], type(S2).__name__)
